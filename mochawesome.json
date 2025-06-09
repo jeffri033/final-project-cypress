@@ -1,66 +1,66 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 2,
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "testsRegistered": 2,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-06-07T01:45:30.244Z",
-    "end": "2025-06-07T01:46:25.756Z",
-    "duration": 55512
+    "start": "2025-06-09T03:03:07.451Z",
+    "end": "2025-06-09T03:06:29.511Z",
+    "duration": 202060
   },
   "results": [
     {
-      "uuid": "772f00e4-776e-4626-ae64-de699394d725",
+      "uuid": "da64fc34-be5d-4df1-b6b2-1ad6b8ac853a",
       "title": "",
-      "fullFile": "cypress\\e2e\\youtube\\youtube.cy.js",
-      "file": "cypress\\e2e\\youtube\\youtube.cy.js",
+      "fullFile": "cypress\\e2e\\amazon\\amazon.cy.js",
+      "file": "cypress\\e2e\\amazon\\amazon.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "c5ff2c50-ee6e-4a1e-a877-dd8db7da1a00",
-          "title": "YOUTUBE SEARCHING",
+          "uuid": "3eb182ba-492f-415d-986e-02ec0d22e302",
+          "title": "AMAZON SEARCHING PRODUCT",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Search Film",
-              "fullTitle": "YOUTUBE SEARCHING Search Film",
+              "title": "Search Product",
+              "fullTitle": "AMAZON SEARCHING PRODUCT Search Product",
               "timedOut": null,
-              "duration": 17623,
+              "duration": 41765,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "// search video\nlet videoIndex = 2;\nvideo.SearchVideo(videoIndex);\n// open video\nvideo.OpenVideo();",
+              "code": "let keyword = 'chair';\nlet indexProduct = 4;\n// search product\nproduct.SearchProduct(keyword, indexProduct);\n// get detail product\nproduct.GetProductDetail();",
               "err": {},
-              "uuid": "ff67ac4a-c204-4422-a89b-3fc85105d3fe",
-              "parentUUID": "c5ff2c50-ee6e-4a1e-a877-dd8db7da1a00",
+              "uuid": "a0e2c9ed-6ee1-4c27-95cc-f1d232e67e97",
+              "parentUUID": "3eb182ba-492f-415d-986e-02ec0d22e302",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ff67ac4a-c204-4422-a89b-3fc85105d3fe"
+            "a0e2c9ed-6ee1-4c27-95cc-f1d232e67e97"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17623,
+          "duration": 41765,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,49 +76,107 @@
       "_timeout": 2000
     },
     {
-      "uuid": "e30bf0fa-0a3e-4ca1-9676-a70f5c4a69c7",
+      "uuid": "6551e2f4-6f29-489b-9f90-5b850d6c1a74",
       "title": "",
-      "fullFile": "cypress\\e2e\\amazon\\amazon.cy.js",
-      "file": "cypress\\e2e\\amazon\\amazon.cy.js",
+      "fullFile": "cypress\\e2e\\youtube\\youtube.cy.js",
+      "file": "cypress\\e2e\\youtube\\youtube.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "5bc0093e-9a9f-4ac5-916a-aeb931b3b08a",
-          "title": "AMAZON SEARCHING PRODUCT",
+          "uuid": "1884dd75-51a0-42f9-9096-a513bfb93026",
+          "title": "YOUTUBE SEARCHING",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Search Product",
-              "fullTitle": "AMAZON SEARCHING PRODUCT Search Product",
+              "title": "Search Film",
+              "fullTitle": "YOUTUBE SEARCHING Search Film",
               "timedOut": null,
-              "duration": 26384,
+              "duration": 18404,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "let keyword = 'chair';\nlet indexProduct = 4;\n// search product\nproduct.SearchProduct(keyword, indexProduct);\n// get detail product\nproduct.GetProductDetail();",
+              "code": "// search video\nlet videoIndex = 2;\nvideo.SearchVideo(videoIndex);\n// open video\nvideo.OpenVideo();",
               "err": {},
-              "uuid": "8cc5e069-df96-4f9b-b727-26b8577c87f3",
-              "parentUUID": "5bc0093e-9a9f-4ac5-916a-aeb931b3b08a",
+              "uuid": "e9062ac1-7d50-43f5-9c37-18d346fb6db4",
+              "parentUUID": "1884dd75-51a0-42f9-9096-a513bfb93026",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8cc5e069-df96-4f9b-b727-26b8577c87f3"
+            "e9062ac1-7d50-43f5-9c37-18d346fb6db4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26384,
+          "duration": 18404,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3b71993b-5648-4965-b9cc-64cb7e9d8afe",
+      "title": "",
+      "fullFile": "cypress\\e2e\\agoda\\agoda.cy.js",
+      "file": "cypress\\e2e\\agoda\\agoda.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "da11c645-0a9e-40d7-9555-e79c3fe1b95b",
+          "title": "AGODA FLIGHT TICKET BOOKING",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Booking Flight Ticket",
+              "fullTitle": "AGODA FLIGHT TICKET BOOKING Booking Flight Ticket",
+              "timedOut": null,
+              "duration": 120363,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// searching for a flight \nflight.SearchFlight();\n// select flight\nflight.SelectFlight();\n// fill in form booking\nflight.FillFormBooking();\n// verify booking information\nflight.VerifyDataBooking();",
+              "err": {},
+              "uuid": "0d500d97-d2f1-4376-8caf-0e80057e2ba1",
+              "parentUUID": "da11c645-0a9e-40d7-9555-e79c3fe1b95b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d500d97-d2f1-4376-8caf-0e80057e2ba1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 120363,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -24,7 +24,7 @@ class Product {
         this.index = indexProduct;
 
         // type product keyword
-        cy.get(this.searchBar).type(keyword);
+        cy.get(this.searchBar, { timeout: 10000 }).type(keyword);
 
         // click search button
         cy.get(this.searchButton).click();

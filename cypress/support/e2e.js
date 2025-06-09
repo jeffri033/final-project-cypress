@@ -25,3 +25,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false; // prevent Cypress from failing the test
   }
 });
+
+
+Cypress.on('uncaught:exception', (err) => {
+  // Ignore ResizeObserver loop errors
+  if (err.message.includes('ResizeObserver loop')) {
+    return false; // prevents Cypress from failing the test
+  }
+});
